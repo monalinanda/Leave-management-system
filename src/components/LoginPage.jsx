@@ -31,7 +31,7 @@ const LoginPage = () => {
       setIsSignInSuccessful(true);
       setEmail("");
       setPassword("");
-      navigateTo("/");
+      navigateTo("/dashboard");
     } else {
       alert("Incorrect email or password. Please try again.");
     }

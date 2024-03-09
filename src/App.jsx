@@ -16,7 +16,7 @@ function App() {
   const appRouter = createBrowserRouter([
     {
       path: "/",
-      element: <Dashboard />,
+      element: <LoginPage />,
     },
     {
       path: "/login",

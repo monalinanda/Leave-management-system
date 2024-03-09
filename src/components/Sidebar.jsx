@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <div
       className={`bg-gray-800 sm:w-[20%] ${
-        pathName === "/login" ? "hidden" : "block"
+        pathName === "/login"  || pathName === "/" ? "hidden" : "block"
       }`}
     >
       <button

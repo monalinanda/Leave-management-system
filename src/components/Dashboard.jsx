@@ -1,12 +1,23 @@
+import { useEffect } from "react";
 import { useStateContext } from "../utils/StateContext";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 
 const Dashboard = () => {
-  const { totalLeave, approvedLeave, pendingLeave, rejectLeave } =
+  const { totalLeave, approvedLeave, pendingLeave, rejectLeave ,isSignInSuccessful} =
     useStateContext();
   const users = useSelector((store) => store.loginUser.uers);
   const newUsersArray = users?.filter((item) => item.userType !== "employee");
+  const navigateTo = useNavigate();
+  useEffect(()=>{
+if(isSignInSuccessful === true){
+  navigateTo("/dashboard")
+}
+else{
+  navigateTo("/")
+}
+  })
 
   return (
     <div className=" w-full">

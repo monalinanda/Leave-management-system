@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <Disclosure
       as="nav"
-      className={`bg-gray-800 ${path === "/login" ? "hidden" : "block"}`}
+      className={`bg-gray-800 ${path === "/login" || path ==="/"? "hidden" : "block"}`}
     >
       {({ open }) => (
         <>
