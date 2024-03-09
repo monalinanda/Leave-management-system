@@ -1,0 +1,51 @@
+
+{ "leaveMangement" : [ { "name" : "LeaveType",
+"leaveTypeList" :[{
+    "name" : "other",
+    "details":"other",
+    "createdOn": "8 Mar 2024 ",
+    "status" : "Active",
+    "action":"Edit"
+},
+{
+    "name" : "Medical Leave",
+    "details":"NA",
+    "createdOn": "8 Mar 2024 ",
+    "status" : "Active",
+    "action":"Edit"
+},
+{
+    "name" : "Casual Leave",
+    "details":"NA",
+    "createdOn": "8 Mar 2024 ",
+    "status" : "Active",
+    "action":"Edit"
+}
+]
+} , 
+{"name":"appUsers" ,
+"usersList" :[{
+    "name" : "TestUser Sharma",
+    "email": "testUser@xyz.com",
+    "password":"Test@123",
+    "userType" : "employee",
+    "userId" : 1
+},
+{
+    "name" : "TestManager Sahoo",
+    "email": "testManager@xyz.com",
+    "password":"Test@1234",
+    "userType" : "manager",
+    "userId" : 2
+},
+{
+    "name" : "TestHR Ojha",
+    "email": "testHRr@xyz.com",
+    "password":"Test@1235",
+    "userType" : "HR",
+    "userId" : 3
+}
+]}
+]
+}
+
